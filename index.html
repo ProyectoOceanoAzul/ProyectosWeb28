@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+
+<!-- <!DOCTYPE html>    indicamos al navegaor q estamos trabajando con la ultima version de html5  -->
+
+<html lang="es">
+
+<!-- head   : van los metadatos informaocion q indiucamos al navegador para q identifique de forma correcta la pagian web -->
+
+<head>
+
+    <!-- html lang="es">    indica en q idioma esta escrinto el docuimento html -->
+
+    <!-- indicamos al navegador q tenbemos vocales con tilde -->
+    <!-- Lea codigo ASCII-->
+    <meta charset="UTF-8">
+
+    <!-- Para q el visitio web sea adaptable a cualquier dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- contniendio de la pagina web -->
+    <meta name="description" content="Esta es mi primera pagina web">
+
+    <!-- para el motor de busquedad busque mi pagina / escanear-->
+    <meta name="robots" content="index, follow">
+
+    <!-- palabras claves para encontrar mi pagina web -->
+    <meta name="keywords" content="pagina, website, sitio web, mi primera">
+
+    <!-- Nombre de nuestra página -->
+    <meta name="copyright" content="Copyright © MiWeb.com">
+
+    <!-- Indicarle al autor de quien ha creado la pagina web -->
+    <meta name="Author" Lang="es" content="Gerson N">
+
+
+
+    <!-- para q la pagina se recargue cada 10 segundos de acuerdo al contenido 
+    <meta http-equiv="refresh" content="10" />
+    -->
+
+
+    <!-- 
+    observacion : para q despues de 5 segundos se recargue otra pogina web 
+
+    <meta http-equiv="refresh" content="5; url=https://www.youtube.com/@geronelo1435" />    
+    -->
+
+
+    <!-- normalize : agregamos un archivo .css -->
+    <link rel="stylesheet" href="./css/normalize.css">
+
+
+    <!-- estilos css : agregamos un archivo .css -->
+    <link rel="stylesheet" href="./css/estilos.css">
+
+
+
+
+    <!-- icono en la pagina web : para importar iconos -->
+    <link rel="shortcut icon" href="./imagenes/icon.png" type="image/x-icon">
+
+    <!-- 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    -->
+
+    <!-- enlace para icnos de fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+
+
+
+
+    <!-- 
+    colocar un nombre referido a lo q contiene el documento html  y se mostrara en una pestaña -->
+    <title>Flexbox</title>
+
+</head>
+
+
+<body>
+
+    <!-- contenedor header -->
+    <header class="contenedor__header" id="inicio">
+
+        <!-- contenedor__superior -->
+        <nav class="contenedor__superior">
+
+            <div class="contenedor">
+
+                <!-- logo -->
+                <div class="superior__logo">
+                    <img src="./imagenes/logocody1.svg" alt="logocody" title="logocody">
+                    <h1 class="logo__titulo">Emma bride</h1>
+                </div>
+
+
+                <div class="superior__menu">
+                    <ul>
+                        <li><a href="index.html" style="color: #f44336; font-weight: 800;">Heim</a></li>
+                        <li><a href="about.html">Über uns</a></li>
+                        <li><a href="events.html">Ereignisse</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </nav>
+
+
+        <!-- contenedor__banner -->
+        <section class="contenedor__banner">
+            <div class="contenedor">
+
+                <div class="banner__arriba">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <h2>
+                        Curabitur gravida facilisis maximus nulla interdum sem
+                    </h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. repudiandae, neque.
+                    </p>
+
+
+                    <div class="fila__botones">
+                        <a href="events.html" class="btn btn--black">
+                            Ereignisse <i class="fa-solid fa-angles-right fa-xs"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+                <div class="banner__abajo">
+
+                    <div class="redsocial">
+                        <a href="#"><img src="./imagenes/facebook.svg" alt="facebook1" title="facebook1"></a>
+
+                        <a href="#"><img src="./imagenes/twitter.svg" alt="twitter1" title="twitter1"></a>
+
+                        <a href="#"><img src="./imagenes/instagram.svg" alt="instagram1" title="instagram1"></a>
+
+                        <a href="#"><img src="./imagenes/linkedin.svg" alt="linkedin1" title="linkedin1"></a>
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+        </section>
+
+
+
+    </header>
+
+
+
+
+    <main>
+        <!-- acerca -->
+        <section class="contenedor__homes1 altura1 altura3m">
+            <div class="contenedor">
+
+                <div class="homes1__arriba">
+                    <div class="arriba__lado1">
+                        <h5 class="texto">
+                            Integer venenatis vitae
+                        </h5>
+
+                        <h3>
+                            Lorem ipsum dolor sit
+                        </h3>
+
+                    </div>
+
+
+                    <div class="arriba__lado2">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nulla itaque quod iste,
+                            praesentium minima temporibus alias provident odit voluptatibus unde nobis nemo amet
+                            eligendi reiciendis omnis, adipisci fuga quidem!
+                        </p>
+                    </div>
+
+                </div>
+
+
+
+                <div class="homes1__abajo">
+
+                    <div class="abajo__lado1">
+                        <img src="./imagenes/hs1.jpg" alt="hs1" title="hs1">
+                    </div>
+
+                    <div class="abajo__lado2">
+                        <h4>Morbi vestibulum odio eget turpis aliquet dictum</h4>
+
+                        <p>
+                            Sed tempus efficitur ex et elementum. Nulla at diam blandit, posuere dui vel, tempor arcu.
+                            Nulla varius dictum lorem, et laoreet ipsum. Nunc eget sem rutrum, dictum dolor id, rhoncus
+                            justo.
+                        </p>
+
+                        <p>
+                            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi
+                            tempus urna at tincidunt sodales. Sed pellentesque lacinia dui in venenatis.
+                        </p>
+
+                        <div class="resumen">
+                            <p>
+                                <i class="fa-solid fa-check" style="color: #ff5722;"></i> Aenean pulvinar augue
+                                <br>
+                                <i class="fa-solid fa-check" style="color: #ff5722;"></i> Proin aliquam dui
+                                sollicitudin
+                                <br>
+                                <i class="fa-solid fa-check" style="color: #ff5722;"></i> Etiam convallis gravida felis
+                                <br>
+                                <i class="fa-solid fa-check" style="color: #ff5722;"></i>
+                                Vivamus sed tempor orci
+                            </p>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- What We Do -->
+        <section class="contenedor__homes2 altura1 altura3m">
+            <div class="contenedor">
+
+                <div class="homes2">
+
+                    <div class="homes2__arriba altura2">
+                        <h5 class="texto">Was wir tun</h5>
+                        <h3>
+                            Aenean ullamcorper sit amet dolor & non gravida vivamus amet
+                        </h3>
+                    </div>
+
+
+                    <div class="homes2__abajo">
+                        <article class="homes2__article">
+                            <img src="./imagenes/hstools.svg" alt="hstools" title="hstools">
+                            <h4>Wer wir sind</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.
+                            </p>
+                        </article>
+
+                        <article class="homes2__article">
+                            <img src="./imagenes/hscompass.svg" alt="hscompass" title="hscompass">
+                            <h4>Wer wir sind</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, elit. Id ab commodi magnam.
+                            </p>
+                        </article>
+
+
+                        <article class="homes2__article">
+                            <img src="./imagenes/hstoolbox.svg" alt="hstoolbox" title="hstoolbox">
+                            <h4>Was wir tun</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, elit. Id ab
+                                commodi magnam.
+                            </p>
+                        </article>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- services -->
+        <section class="contenedor__homes3 altura1 altura3m">
+            <div class="contenedor">
+
+                <div class="homes3">
+
+                    <div class="homes3__arriba altura2">
+                        <h5 class="texto">Lorem, ipsum dolor.</h5>
+                        <h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, totam?
+                        </h3>
+                    </div>
+
+
+                    <div class="homes3__abajo">
+
+                        <article class="homes3__article">
+                            <img src="./imagenes/hsglass.svg" alt="">
+                            <h4>
+                                Lorem ipsum dolor sit
+                            </h4>
+                        </article>
+
+                        <article class="homes3__article">
+                            <img src="./imagenes/hsgift.svg" alt="">
+                            <h4>
+                                Lorem ipsum dolor sit
+                            </h4>
+                        </article>
+
+                        <article class="homes3__article">
+                            <img src="./imagenes/hsheart.svg" alt="">
+                            <h4>
+                                Lorem ipsum dolor sit
+                            </h4>
+                        </article>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- estadisticas -->
+        <section class="contenedor__homes4 altura altura3m">
+            <div class="contenedor">
+
+                <div class="homes4">
+
+                    <div class="homes4__arriba">
+                        <div class="homes4__lado1">
+
+                            <h3>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, reprehenderit?
+                            </h3>
+
+                            <p>
+                                Sed ut perspiciatis unde omnis iste natus error sit doloremque laudantium, totam rem
+                                aperiam, veritatis et quasi.
+                            </p>
+
+
+                            <div class="fila__botones">
+                                <a href="portfolio.html" class="btn btn--black">
+                                    Portfolio <i class="fa-solid fa-angles-right fa-xs"></i>
+                                </a>
+                            </div>
+
+
+                        </div>
+
+                        <div class="homes4__lado2">
+                            <img src="./imagenes/hs2.jpg" alt="hs2">
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="homes4__abajo">
+                        <article class="homes4__article">
+                            <img src="./imagenes/business.svg" alt="business">
+                            <h4>5,100</h4>
+                            <p>
+                                Total Projects
+                            </p>
+                        </article>
+
+
+                        <article class="homes4__article">
+                            <img src="./imagenes/smile.svg" alt="smile">
+                            <h4>9,716</h4>
+                            <p>
+                                Happy Clients
+                            </p>
+                        </article>
+
+
+                        <article class="homes4__article">
+                            <img src="./imagenes/gifts.svg" alt="gifts">
+                            <h4>7,600</h4>
+                            <p>
+                                Cup Of Coffee
+                            </p>
+                        </article>
+
+
+                        <article class="homes4__article">
+                            <img src="./imagenes/award.svg" alt="award">
+                            <h4>967</h4>
+                            <p>
+                                Awards Won
+                            </p>
+                        </article>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- portaoflioo -->
+        <section class="contenedor__homes5 altura1 altura3m">
+            <div class="contenedor">
+
+                <div class="homes5">
+                    <div class="homes5__arriba altura2">
+
+                        <h5 class="texto">Portfolio</h5>
+                        <h3>
+                            Neueste Projekte
+                        </h3>
+                    </div>
+
+
+                    <div class="homes5__abajo">
+                        <article class="grupo__portfolio">
+                            <img src="./imagenes/hs1.jpg" alt="hs1">
+                            <img src="./imagenes/hs2.jpg" alt="hs2">
+                            <img src="./imagenes/hs3.jpg" alt="hs3">
+                        </article>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+
+        <!-- evento -->
+        <section class="contenedor__homes6 altura1 altura3m">
+            <div class="contenedor">
+
+                <div class="homes6">
+                    <div class="homes6__arriba altura2">
+                        <h5 class="texto">Eventos</h5>
+                        <h3>
+                            Neueste Events
+                        </h3>
+                    </div>
+
+
+
+                    <div class="homes6__abajo">
+                        <article class="homes6__article">
+                            <img src="./imagenes/hs3.jpg" alt="hs3">
+
+
+                            <div class="items__eventos">
+                                <div class="grupo__items">
+                                    <a href="#">
+                                        <i class="fa-solid fa-gift"></i>
+                                        Lorem ipsum dolor
+                                    </a>
+
+                                    <a href=" #">
+                                        <i class="fa-solid fa-heart"></i>
+                                        50
+                                    </a>
+
+                                    <a href="#">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        Oct, 2024
+                                    </a>
+                                </div>
+
+
+                                <div class="grupo__texto">
+                                    <h4>
+                                        Etiam odio eget mauris fermentum tempus imperdiet lectus
+                                    </h4>
+                                </div>
+
+                            </div>
+
+
+                        </article>
+
+
+
+                        <article class="homes6__article">
+                            <img src="./imagenes/hs7.jpg" alt="hs3">
+
+
+                            <div class="items__eventos">
+                                <div class="grupo__items">
+                                    <a href="#">
+                                        <i class="fa-solid fa-gift"></i>
+                                        Lorem ipsum dolor
+                                    </a>
+
+                                    <a href="#">
+                                        <i class="fa-solid fa-heart"></i>
+                                        50
+                                    </a>
+
+                                    <a href="#">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        Oct, 2024
+                                    </a>
+                                </div>
+
+
+                                <div class="grupo__texto">
+                                    <h4>
+                                        Etiam odio eget mauris fermentum tempus imperdiet lectus
+                                    </h4>
+                                </div>
+
+                            </div>
+
+
+                        </article>
+
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Testimonials -->
+        <section class="contenedor__homes7 altura1 altura3m">
+            <div class="contenedor">
+
+                <div class="homes7">
+                    <div class="homes7__arriba altura2">
+                        <h5 class="texto">Referenzen</h5>
+                        <h3>
+                            Zufrieden mit Kunden und Klienten
+                        </h3>
+                    </div>
+
+
+                    <div class="homes7__abajo">
+                        <article class="homes7__article">
+                            <div class="testimonio__cabecera">
+                                <img src="./imagenes/testimonio1.jpg" alt="testimonio1">
+                            </div>
+
+
+                            <div class="testimonio__cuerpo">
+                                <h4>
+                                    Lorem ipsum dolor sit amet elit. Velit beatae
+                                    laudantium
+                                    voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus
+                                    tempora.
+                                </h4>
+                            </div>
+
+
+                            <div class="testimonio__pie">
+                                <h4>Annelien Von Gersdorff</h4>
+                                <p>Example City</p>
+                            </div>
+
+                        </article>
+
+
+                        <article class="homes7__article">
+                            <div class="testimonio__cabecera">
+                                <img src="./imagenes/testimonio2.jpg" alt="testimonio2">
+                            </div>
+
+
+                            <div class="testimonio__cuerpo">
+                                <h4>
+                                    Lorem ipsum dolor sit amet elit. Velit beatae
+                                    laudantium
+                                    voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus
+                                    tempora.
+                                </h4>
+                            </div>
+
+
+                            <div class="testimonio__pie">
+                                <h4>Adolf Von Falkenhausen</h4>
+                                <p>Example City</p>
+                            </div>
+
+                        </article>
+
+
+
+                        <article class="homes7__article">
+                            <div class="testimonio__cabecera">
+                                <img src="./imagenes/testimonio3.jpg" alt="testimonio3">
+                            </div>
+
+
+                            <div class="testimonio__cuerpo">
+                                <h4>
+                                    Lorem ipsum dolor sit amet elit. Velit beatae
+                                    laudantium
+                                    voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus
+                                    tempora.
+                                </h4>
+                            </div>
+
+
+                            <div class="testimonio__pie">
+                                <h4>Diantha Hosenfeld</h4>
+                                <p>Example City</p>
+                            </div>
+
+                        </article>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+
+        <!-- contenedor__footer -->
+        <section class="contenedor__footer">
+            <div class="contenedor">
+                <div class="footer__fila">
+
+                    <div class="footer__section1">
+                        <h4 style="color: #ff5722;">Emma Bride</h4>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, non!
+                        </p>
+
+                        <div class="redsocial1">
+                            <a href="#"><img src="./imagenes/facebook1.svg" alt="facebook1" title="facebook1"></a>
+
+                            <a href="#"><img src="./imagenes/twitter1.svg" alt="twitter1" title="twitter1"></a>
+
+                            <a href="#"><img src="./imagenes/instagram1.svg" alt="instagram1" title="instagram1"></a>
+
+                            <a href="#"><img src="./imagenes/linkedin1.svg" alt="linkedin1" title="linkedin1"></a>
+
+                        </div>
+                    </div>
+
+
+                    <div class="footer__section1">
+                        <h4>Link</h4>
+
+                        <ul class="menu__opciones">
+                            <li><a href="index.html">» Heim</a></li>
+                            <li><a href="about.html">» über Uns</a></li>
+                            <li><a href="events.html">» Ereignisse</a></li>
+                            <li><a href="portfolio.html">» Portfolio</a></li>
+                            <li><a href="contact.html">» Kontakt</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer__section1">
+                        <h4>Dienstleistungen</h4>
+
+                        <ul class="menu__opciones">
+                            <li><a href="services.html">» Ereignisse 1</a></li>
+                            <li><a href="services.html">» Ereignisse 2</a></li>
+                            <li><a href="services.html">» Ereignisse 3</a></li>
+                            <li><a href="services.html">» Ereignisse 4</a></li>
+                            <li><a href="services.html">» Ereignisse 5</a></li>
+                            <li><a href="services.html">» Ereignisse 6</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer__section1">
+                        <h4>Kontakt</h4>
+
+                        <ul class="menu__opciones">
+                            <li><a
+                                    href="https://api.whatsapp.com/send?phone=974731614&amp;text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20de%20los%20servicios">
+                                    » +51 974 731 614
+                                </a></li>
+                            <li><a href="mailto:gnerylozada@gmail.com">» gnerylozada@gmail.com</a></li>
+                            <li><a href="services.html">» Grünstraße 15, 40212 Düsseldorf, Germany</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- pie -->
+    <footer class="contenedor__footerautor">
+        <div class="contenedor">
+
+            <div class="pie__titulo">
+                <p>
+                    &copy; 2024, Derechos Reservados, Diseñado por
+                    <span class="autor">93R50N</span>
+
+                    <br>
+                    Jeder Beitrag, egal wie klein, kann jemandes Leben verändern. Spende:
+                    <span class="donacion">
+                        <a href="https://wa.link/5nawh3"> Plin o Yape</a>
+                    </span>
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

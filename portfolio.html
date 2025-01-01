@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+
+<!-- <!DOCTYPE html>    indicamos al navegaor q estamos trabajando con la ultima version de html5  -->
+
+<html lang="es">
+
+<!-- head   : van los metadatos informaocion q indiucamos al navegador para q identifique de forma correcta la pagian web -->
+
+<head>
+
+    <!-- html lang="es">    indica en q idioma esta escrinto el docuimento html -->
+
+    <!-- indicamos al navegador q tenbemos vocales con tilde -->
+    <!-- Lea codigo ASCII-->
+    <meta charset="UTF-8">
+
+    <!-- Para q el visitio web sea adaptable a cualquier dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- contniendio de la pagina web -->
+    <meta name="description" content="Esta es mi primera pagina web">
+
+    <!-- para el motor de busquedad busque mi pagina / escanear-->
+    <meta name="robots" content="index, follow">
+
+    <!-- palabras claves para encontrar mi pagina web -->
+    <meta name="keywords" content="pagina, website, sitio web, mi primera">
+
+    <!-- Nombre de nuestra página -->
+    <meta name="copyright" content="Copyright © MiWeb.com">
+
+    <!-- Indicarle al autor de quien ha creado la pagina web -->
+    <meta name="Author" Lang="es" content="Gerson N">
+
+
+
+    <!-- para q la pagina se recargue cada 10 segundos de acuerdo al contenido 
+    <meta http-equiv="refresh" content="10" />
+    -->
+
+
+    <!-- 
+    observacion : para q despues de 5 segundos se recargue otra pogina web 
+
+    <meta http-equiv="refresh" content="5; url=https://www.youtube.com/@geronelo1435" />    
+    -->
+
+
+    <!-- normalize : agregamos un archivo .css -->
+    <link rel="stylesheet" href="./css/normalize.css">
+
+
+    <!-- estilos css : agregamos un archivo .css -->
+    <link rel="stylesheet" href="./css/estilos.css">
+
+
+
+
+    <!-- icono en la pagina web : para importar iconos -->
+    <link rel="shortcut icon" href="./imagenes/icon.png" type="image/x-icon">
+
+    <!-- 
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    -->
+
+    <!-- enlace para icnos de fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <!-- 
+    colocar un nombre referido a lo q contiene el documento html  y se mostrara en una pestaña -->
+    <title>Flexbox</title>
+
+</head>
+
+
+<body>
+
+    <!-- contenedor header -->
+    <header class="contenedor__header">
+
+        <!-- contenedor__superior -->
+        <nav class="contenedor__superior">
+
+            <div class="contenedor">
+
+                <!-- logo -->
+                <div class="superior__logo">
+                    <img src="./imagenes/logocody1.svg" alt="logocody" title="logocody">
+                    <h1 class="logo__titulo">Emma bride</h1>
+                </div>
+
+
+                <div class="superior__menu">
+                    <ul>
+                        <li><a href="index.html" style="color: #ababab;">Heim</a></li>
+                        <li><a href="about.html" style="color: #ababab;">Über uns</a></li>
+                        <li><a href="events.html" style="color: #ababab;">Ereignisse</a></li>
+                        <li><a href="portfolio.html" style="color: #f44336; font-weight: 600;">Portfolio</a></li>
+                        <li><a href="contact.html" style="color: #ababab;">Kontakt</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </nav>
+
+
+
+    </header>
+
+
+
+
+    <main>
+
+        <!-- banner -->
+        <section class="banner">
+            <div class="banner_fila">
+                <div class="contenedor">
+
+                    <h5>
+                        <a href="index.html" class="ebanner">Heim</a> <span class="tbanner"> »
+                            Portfolio page</span>
+                    </h5>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- contenedor__portfolios1 -->
+        <section class="contenedor__portfolios1 altura1 altura3m">
+            <div class="contenedor">
+
+                <div class="portfolios1">
+                    <div class="portfolios1__arriba altura2">
+
+                        <h5 class="texto">Portfolio</h5>
+                        <h3>
+                            Neueste Projekte
+                        </h3>
+                    </div>
+
+
+                    <div class="portfolios1__abajo">
+                        <article class="grupo__portfolio">
+                            <img src="./imagenes/hs1.jpg" alt="hs1">
+                            <img src="./imagenes/hs2.jpg" alt="hs2">
+                            <img src="./imagenes/hs3.jpg" alt="hs3">
+
+
+                            <img src="./imagenes/hs4.jpg" alt="hs4">
+                            <img src="./imagenes/hs5.jpg" alt="hs5">
+                            <img src="./imagenes/hs6.jpg" alt="hs6">
+
+
+                            <img src="./imagenes/hs7.jpg" alt="hs7">
+                            <img src="./imagenes/hs8.jpg" alt="hs8">
+                            <img src="./imagenes/hs9.jpg" alt="hs9">
+                        </article>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+        <!-- contenedor__portfolios2 -->
+        <section class="contenedor__portfolios2 altura1 altura3m">
+            <div class="contenedor">
+
+                <div class="portfolios2">
+                    <div class="portfolios2__arriba altura2">
+                        <h5 class="texto">Ereignisse</h5>
+                        <h3>
+                            Neueste Events
+                        </h3>
+                    </div>
+
+
+                    <div class="portfolios2__abajo">
+                        <article class="portfolios2__article">
+                            <img src="./imagenes/e1.jpg" alt="e1">
+
+
+                            <div class="items__eventos">
+                                <div class="grupo__items">
+                                    <a href="#">
+                                        <i class="fa-solid fa-gift"></i>
+                                        Lorem ipsum dolor
+                                    </a>
+
+                                    <a href="#">
+                                        <i class="fa-solid fa-heart"></i>
+                                        50
+                                    </a>
+
+                                    <a href="#">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        Oct, 2024
+                                    </a>
+                                </div>
+
+
+                                <div class="grupo__texto">
+                                    <h4>
+                                        How to become a best sale marketer in a year!
+                                    </h4>
+                                </div>
+
+                            </div>
+
+
+                        </article>
+
+
+
+                        <article class="portfolios2__article">
+                            <img src="./imagenes/e2.jpg" alt="e2">
+
+
+                            <div class="items__eventos">
+                                <div class="grupo__items">
+                                    <a href="#">
+                                        <i class="fa-solid fa-gift"></i>
+                                        Lorem ipsum dolor
+                                    </a>
+
+                                    <a href="#">
+                                        <i class="fa-solid fa-heart"></i>
+                                        50
+                                    </a>
+
+                                    <a href="#">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        Oct, 2024
+                                    </a>
+                                </div>
+
+
+                                <div class="grupo__texto">
+                                    <h4>
+                                        How to become a best sale marketer in a year!
+                                    </h4>
+                                </div>
+
+                            </div>
+
+
+                        </article>
+
+
+
+                        <article class="portfolios2__article">
+                            <img src="./imagenes/e3.jpg" alt="e3">
+
+
+                            <div class="items__eventos">
+                                <div class="grupo__items">
+                                    <a href="#">
+                                        <i class="fa-solid fa-gift"></i>
+                                        Lorem ipsum dolor
+                                    </a>
+
+                                    <a href="#">
+                                        <i class="fa-solid fa-heart"></i>
+                                        50
+                                    </a>
+
+                                    <a href="#">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        Oct, 2024
+                                    </a>
+                                </div>
+
+
+                                <div class="grupo__texto">
+                                    <h4>
+                                        How to become a best sale marketer in a year!
+                                    </h4>
+                                </div>
+
+                            </div>
+
+
+                        </article>
+
+
+
+                        <article class="portfolios2__article">
+                            <img src="./imagenes/e4.jpg" alt="e4">
+
+
+                            <div class="items__eventos">
+                                <div class="grupo__items">
+                                    <a href="#">
+                                        <i class="fa-solid fa-gift"></i>
+                                        Lorem ipsum dolor
+                                    </a>
+
+                                    <a href="#">
+                                        <i class="fa-solid fa-heart"></i>
+                                        50
+                                    </a>
+
+                                    <a href="#">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        Oct, 2024
+                                    </a>
+                                </div>
+
+
+                                <div class="grupo__texto">
+                                    <h4>
+                                        How to become a best sale marketer in a year!
+                                    </h4>
+                                </div>
+
+                            </div>
+
+
+                        </article>
+
+
+                        <article class="portfolios2__article">
+                            <img src="./imagenes/e5.jpg" alt="e5">
+
+
+                            <div class="items__eventos">
+                                <div class="grupo__items">
+                                    <a href="#">
+                                        <i class="fa-solid fa-gift"></i>
+                                        Lorem ipsum dolor
+                                    </a>
+
+                                    <a href="#">
+                                        <i class="fa-solid fa-heart"></i>
+                                        50
+                                    </a>
+
+                                    <a href="#">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        Oct, 2024
+                                    </a>
+                                </div>
+
+
+                                <div class="grupo__texto">
+                                    <h4>
+                                        How to become a best sale marketer in a year!
+                                    </h4>
+                                </div>
+
+                            </div>
+
+
+                        </article>
+
+
+
+                        <article class="portfolios2__article">
+                            <img src="./imagenes/e6.jpg" alt="e6">
+
+
+                            <div class="items__eventos">
+                                <div class="grupo__items">
+                                    <a href="#">
+                                        <i class="fa-solid fa-gift"></i>
+                                        Lorem ipsum dolor
+                                    </a>
+
+                                    <a href="#">
+                                        <i class="fa-solid fa-heart"></i>
+                                        50
+                                    </a>
+
+                                    <a href="#">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        Oct, 2024
+                                    </a>
+                                </div>
+
+
+                                <div class="grupo__texto">
+                                    <h4>
+                                        How to become a best sale marketer in a
+                                        year!
+                                    </h4>
+                                </div>
+
+                            </div>
+
+
+                        </article>
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- contenedor__portfolios3 s5 -->
+        <section class="contenedor__portfolios3 altura1 altura3m">
+            <div class="contenedor">
+
+                <div class="portfolios3__fila">
+                    <div class="portfolios3_lado1">
+                        <h5 class="texto">
+                            Beratung
+                        </h5>
+
+                        <h3>
+                            Kostenlose Beratung anfordern <br>
+                            Lasst es uns tun!
+                        </h3>
+                    </div>
+
+
+                    <div class="portfolios3__lado2">
+                        <div class="fila__botones">
+                            <a href="events.html" class="btn btn--black">
+                                Ereignisse
+                            </a>
+
+                            <a href="contact.html" class="btn btn--light">
+                                Kontakt <i class="fa-solid fa-angles-right fa-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- contenedor__footer -->
+        <section class="contenedor__footer">
+            <div class="contenedor">
+                <div class="footer__fila">
+                    <div class="footer__section1">
+                        <h4 style="color: #ff5722;">Emma Bride</h4>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, non!
+                        </p>
+
+                        <div class="redsocial1">
+                            <a href="#"><img src="./imagenes/facebook1.svg" alt="facebook1" title="facebook1"></a>
+
+                            <a href="#"><img src="./imagenes/twitter1.svg" alt="twitter1" title="twitter1"></a>
+
+                            <a href="#"><img src="./imagenes/instagram1.svg" alt="instagram1" title="instagram1"></a>
+
+                            <a href="#"><img src="./imagenes/linkedin1.svg" alt="linkedin1" title="linkedin1"></a>
+
+                        </div>
+                    </div>
+
+
+                    <div class="footer__section1">
+                        <h4>Link</h4>
+
+                        <ul class="menu__opciones">
+                            <li><a href="index.html">» Heim</a></li>
+                            <li><a href="about.html">» über Uns</a></li>
+                            <li><a href="events.html">» Ereignisse</a></li>
+                            <li><a href="portfolio.html">» Portfolio</a></li>
+                            <li><a href="contact.html">» Kontakt</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer__section1">
+                        <h4>Dienstleistungen</h4>
+
+                        <ul class="menu__opciones">
+                            <li><a href="services.html">» Ereignisse 1</a></li>
+                            <li><a href="services.html">» Ereignisse 2</a></li>
+                            <li><a href="services.html">» Ereignisse 3</a></li>
+                            <li><a href="services.html">» Ereignisse 4</a></li>
+                            <li><a href="services.html">» Ereignisse 5</a></li>
+                            <li><a href="services.html">» Ereignisse 6</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer__section1">
+                        <h4>Kontakt</h4>
+
+                        <ul class="menu__opciones">
+                            <li><a
+                                    href="https://api.whatsapp.com/send?phone=974731614&amp;text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20de%20los%20servicios">
+                                    » +51 974 731 614
+                                </a></li>
+                            <li><a href="mailto:gnerylozada@gmail.com">» gnerylozada@gmail.com</a></li>
+                            <li><a href="services.html">» Grünstraße 15, 40212 Düsseldorf, Germany</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- pie -->
+    <footer class="contenedor__footerautor">
+        <div class="contenedor">
+
+            <div class="pie__titulo">
+                <p>
+                    &copy; 2024, Derechos Reservados, Diseñado por
+                    <span class="autor">93R50N</span>
+
+                    <br>
+                    Jeder Beitrag, egal wie klein, kann jemandes Leben verändern. Spende:
+                    <span class="donacion">
+                        <a href="https://wa.link/5nawh3"> Plin o Yape</a>
+                    </span>
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
